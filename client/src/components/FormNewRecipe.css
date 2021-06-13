@@ -1,0 +1,38 @@
+
+.global{
+    display : grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+.form-new-recipe{
+    width: 100%;
+    opacity: .97;
+    /* grid-template-rows: 100px 50fr; */
+    display: grid;
+    grid-template-columns: 5% 60% 5%;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+.form-new-recipe div{
+    /* width: 50%; */
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-column-start: 2;
+    margin: 10px;
+
+}
+
+h1{
+    border-top: 5px groove;
+    border-bottom: 5px groove;
+    font-size: 2em;
+    color: white;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(90,89,96,1) 50%, rgba(255,255,255,1) 100%);
+    /* width:100%; */
+}
+
+.button-submit{
+    width: 30%;
+}

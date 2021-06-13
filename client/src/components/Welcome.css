@@ -1,0 +1,9 @@
+.welcome{
+    position: relative;
+    top: 24vw;
+    font-size: 200%;
+    color: white;
+    font-style: italic;
+    background-color: black;
+    opacity: 0.8;
+  }

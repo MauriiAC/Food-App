@@ -1,0 +1,53 @@
+.ver-detalle button{
+    width: 82%;
+    border-radius: 3px;
+    background-color: rgb(60, 70, 80);
+    color: rgb(215, 215, 215);
+    font-size:20px;
+    cursor: pointer;
+}
+
+.recipe-card{
+    opacity: 100%;
+}
+
+.recipe-diets{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.recipe-diets li{
+    padding: 2px;
+    margin: 2px;
+    background: #bdf0fa; 
+    color: #0c92ac; 
+    /* font-weight: bold;  */
+    padding: 1px; 
+    border: 2px solid #abecf9; 
+    border-radius: 6px;
+}
+
+.recipe-diet{
+    box-shadow: none;
+}
+
+img {
+    max-width: 90%;
+    position: relative;
+    /* top: 1cm; */
+}
+
+.title{
+    /* max-width: 80%; */
+    height: 50px;
+    background-color:blanchedalmond;
+    margin-bottom:0;
+    padding-bottom: 5px;
+}
+ 
+a{
+    text-decoration: none;
+    color: white;
+}

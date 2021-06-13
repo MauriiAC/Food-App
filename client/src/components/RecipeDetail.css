@@ -1,0 +1,81 @@
+.card-detail{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-title{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.titleDetail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 50px;
+    background-color:blanchedalmond;
+    margin-bottom:10;
+    padding-bottom: 5px;
+    border-radius: 8px;
+}
+
+.imageDetail{
+    border: solid 4px;
+    border-radius: 50px;
+    width: 90%
+}
+
+.summary{
+    width:30%;
+    background-color: rgb(255, 195, 0);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.scores{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.scores h3{
+    font-size: 24px;
+    height: 100%;
+    width: 50%;
+    background-color:azure;
+}
+
+.procedure{
+    width: 100%;
+}
+
+.procedure h3{
+    font-size: 200%;
+    color: black;
+    text-shadow: 2px 0 0 #ffffff;
+}
+
+.ingredients{
+    width: 100%;
+}
+
+.ingredients h3{
+    font-size: 200%;
+    color: black;
+    text-shadow: 2px 0 0 #ffffff;
+}
+
+ol{
+    background-color:white;
+    opacity: 90%;
+}
+
+.steps{
+    text-align: left;
+}
