@@ -17,7 +17,7 @@ export const searchRecipe = function(payload)
 
     return function(dispatch)
     {
-        axios.get(`http://localhost:3001/recipes?name=${payload}`)
+        axios.get(`http://127.0.0.1:3001/recipes?name=${payload}`)
         .then((res, err) => {
             dispatch({
                 type: "searchRecipe",
@@ -60,7 +60,7 @@ export const showRecipeDetail = function(payload){
 
     return function(dispatch)
     {
-        axios.get(`http://localhost:3001/recipes/${payload.id}/information?localStorage=${payload.localStorage}`)
+        axios.get(`http://127.0.0.1:3001/recipes/${payload.id}/information?localStorage=${payload.localStorage}`)
         .then((res, err) => {
             dispatch({
                 type: "showRecipeDetail",

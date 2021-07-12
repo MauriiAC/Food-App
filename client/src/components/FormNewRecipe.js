@@ -60,7 +60,7 @@ export function FormNewRecipe(props) {
             steps: steps
         }));
  
-        axios.post('http://localhost:3001/recipe/add', formData)
+        axios.post('http://127.0.0.1:3001/recipe/add', formData)
 
         .then( response => {
             console.log(response)
