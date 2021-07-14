@@ -23,79 +23,9 @@ const { Recipe, Diet_type, Step, Ingredient, Equipment } = require('./src/db.js'
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+  server.listen(process.env.PORT, () => {
+    console.log(`listening at ${process.env.PORT}`); // eslint-disable-line no-console
   });
-
-
-
-
-
-
-
-
-  //----- Cargamos automáticamente unos datos en la BBDD al iniciarla para ir haciendo pruebas ---------
-
-  // var chocotorta = Recipe.create({
-  //   title: 'Chocotorta', 
-  //   summary: 'La chocotorta es un postre originario de Argentina. Con el lanzamiento en 1975 por Bagley de una variedad de galletitas de chocolate, marca Chocolinas; en muchas poblaciones del sur de Santa Fe, se comenzó a elaborar en los hogares esta torta, conocida como “el postre de las chocolinas”.', 
-  //   score: 99, 
-  //   healthScore: 10,  
-  //   urlImage: '/images/chocotorta.jpg'
-  // });
-
-  // var paso1A = Step.create({
-  //   description: 'Mezclar el dulce de leche con el casancream en un bowl',
-  //   order: 1,
-  // })
-
-  // var paso2A = Step.create({
-  //   description: 'Poner capas de mezcla intercaladas con capaz de chocolinas',
-  //   order: 2,
-  // })
-
-  // var paso3A = Step.create({
-  //   description: 'Guardar en la heladera durante 8hs',
-  //   order: 3,
-  // })
-
-  // var ingredA1 = Ingredient.create({
-  //   name: "Dulce de Leche"
-  // })
-
-  // var ingredA2 = Ingredient.create({
-  //   name: "Casancrem"
-  // })
-
-  // var equipA1 = Equipment.create({
-  //   name: "Bowl"
-  // })
-
-
-  // Promise.all([chocotorta, paso1A, paso2A, paso3A, ingredA1, ingredA2, equipA1])
-  //   .then(res => {
-  //     res[0].addSteps([res[1], res[2], res[3]]);
-  //     res[1].addIngredients([res[4], res[5]]);
-  //     res[1].addEquipment(res[6]);
-  //   });
-  
-   
-  // var pastelProteico = Recipe.create({
-  //   title: 'Pastel proteíco sabor a chocolate', 
-  //   summary: 'Esta es una receta recomendadas para deportistas que estén  llevando acabo tanto una dieta para ganar volumen muscular como para definir y perder grasa corporal', 
-  //   score: 90, 
-  //   healthScore: 70,  
-  //   urlImage: '/images/pastelProteico.jpg'
-  // });
-  
-  // var salmonEnYogurt = Recipe.create({
-  //   title: 'Salmón a la plancha con salsa de yogur', 
-  //   summary: 'Si te gustan los contrastes de sabores, este es un plato caliente acompañando por una salsa fría, se trata del salmón a la plancha con salsa de yogur, una receta de 5 minutos que no te puedes perder', 
-  //   score: 70, 
-  //   healthScore: 72,  
-  //   urlImage: '/images/salmonEnYogurt.jpg'
-  // });
-  
   
   
   
