@@ -14,10 +14,10 @@ export function NavBar(props) {
     
     return (
         <header className="head">
-            <button className='appTitle'><Link to='/'>Henry Food</Link></button>
+            <button className='appTitle'><Link to='/'>App Food</Link></button>
             <nav className='navBar'>
-                <button onClick={(e) => handleClick(e)}><Link to='/search'>Search Recipe</Link></button>
-                <button><Link to='/newrecipe'>Create Recipe</Link></button>
+                <button onClick={(e) => handleClick(e)}><Link to='/search'>Buscar Receta</Link></button>
+                <button><Link to='/newrecipe'>Crear Receta</Link></button>
             </nav>
         </header>
     )

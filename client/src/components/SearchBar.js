@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RecipeCard } from './RecipeCard';
 import './SearchBar.css';
 import { useDispatch, useSelector } from 'react-redux';
@@ -15,6 +15,10 @@ export function SearchBar() {
   let initialPage = 1;
   let maxPage;
   let showedRecipes=[];
+
+  useEffect(() => (
+    dispatch(searchRecipe(""))
+  ), [])
 
   
   const [title, setTitle] = useState(initial);
@@ -111,8 +115,8 @@ export function SearchBar() {
         </div>
         <div className="filters">
           <div className="next-previous">
-            <button type="button" onClick={(e) => handlePrevious(e)}> Previous </button>
-            <button type="button" onClick={(e) => handleNext(e)}> Next </button>
+            <button type="button" onClick={(e) => handlePrevious(e)}> Anterior </button>
+            <button type="button" onClick={(e) => handleNext(e)}> Siguiente </button>
             <p>{page} de {maxPage}</p>
           </div>
           <div className="orderBy">
@@ -124,9 +128,9 @@ export function SearchBar() {
             </select>
           </div>
           <div className="filter-diet">
-            <label htmlFor="diet-filter">Diet types</label>
+            <label htmlFor="diet-filter">Tipos de dieta</label>
             <select name="diet-filter" onChange={(e) => handleSelect(e)}>
-              <option value="all diets">All diets</option> 
+              <option value="all diets">Todas</option> 
               <option value="dairy free">Dairy Free</option>
               <option value="fodmap friendly">Fodmap Friendly</option>  
               <option value="gluten free">Gluten Free</option> 
